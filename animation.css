@@ -1,0 +1,60 @@
+.container{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    
+
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: blue;
+    
+}
+.anim-1{
+    position: absolute;
+    margin-left: 80px  ;
+    animation:animation-1 2s infinite alternate;
+}
+@keyframes animation-1{
+    from { top: 0; }
+    to   { top: 160px; }
+}
+.anim-2{
+    position: absolute;
+    animation:animation-2 2s infinite alternate;
+    left: 0;
+    top: 0;
+    background-color: red;
+}
+@keyframes animation-2 {
+    from { left: 0;
+            top: 0; 
+}
+    to   { left: 160px;
+    top: 160px; }
+}
+.anim-3{ 
+    position: absolute;
+    animation:animation-3 2s infinite alternate;
+    left: 0;
+    top: 0;
+    background-color: green;
+}
+@keyframes animation-3 {
+    0%{ top: 0;
+        left: 0;
+
+    }
+     33%{ top: 0;
+        left: 160px;
+     }
+     66%{ top:160px;
+        left: 0;
+
+     }
+     100%{  top: 160px;
+        left: 160px;
+
+     }

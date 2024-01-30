@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body background="pink">
+    <p>Css Animation Excercise</p>
+    <ul>
+        <li>
+            <a href="./page1.html">page1</a>
+        </li>
+        <li>
+            <a href="./page2.html">page2</a>
+        </li>
+        <li>
+            <a href="./page3.html">page3</a>
+        </li>
+    </ul>
+    
+    <h1><b>Page 3: Contact</b></h1>
+        <p><h3>Un formulaire contenant les champs suivants:</h3>
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                        <label for="name">name</label>
+                        </td>
+                        <td><input type="text" id="name"required></td>
+                     </tr>
+                     <tr>
+                        <td>
+                        <label for="Email">Email</label>
+                        </td>
+                        <td><input type="text" id="email" pattern=".+@.+(\.com \.fr)"></td>
+                     </tr>
+                     <tr>
+                        <td>
+                        <label for="telephone">telephone</label>
+                        </td>
+                        <td><input type="telephone" id="telephone" pattern="[0-9]{12}$" requried></td>
+                     </tr>
+                     <tr>
+                        <td>
+                        <label for="Adresse">adress</label>
+                        </td>
+                        <td><input type="text" id="adresse"required></td>
+                     </tr>
+                     <tr>
+                        <td>
+                        <label for="pay">pay</label>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="select">select </option>
+                                    <option value="spain">spain </option>
+                                    <option value="italy">italy </option>
+                                    <option value="united kingdom">united kingdom </option>
+                                    <option value="France">France </option>
+                                    <option value="germany">germany </option>
+                                    <option value="unites state">united state </option>
+                                    <option value="iran">iran </option>
+                                    <option value="turky">turky </option>
+                                    <option value="belgium">belgium </option>
+                                    <option value="ireland">ireland </option>
+
+                                </select></td>
+                     </tr>
+                     <tr>
+                        <td>
+                        <label for="code postale">code postale</label>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="select">select </option>
+                                <option value="63000">63000 </option>
+                                <option value="68000">68000 </option>
+                                <option value="61000">61000 </option>
+                                <option value="62000">62000 </option>
+                                <option value="64000">64000 </option>
+                              
+                            </select></td>
+                     </tr>
+                     <tr>
+                        <td>
+                        <label for="Message">Message</label>
+                        </td>
+                        <td>
+                            <textarea required name="message" maxlenght="25"></textarea> 
+                         </td>
+                     </tr>
+                     <tr>
+                        <td colspan="4"> 
+                            <input type="submit">
+                        </td>
+                     </tr>
+                    
+    
+                </table>
+    
+        
+            </form>
+        </p>
+      <style>
+        input:valid {
+             background-color: palegreen;
+        }
+        
+        input:invalid {
+        background-color: lightpink;
+        }
+        </style>
+</body>
+</html>
